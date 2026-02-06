@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signos del Zodiaco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Signos del Zodiaco </h1>
+            <div class="filtros">
+                <button class="filtro-btn active" data-elemento="todos">Todos</button>
+                <button class="filtro-btn" data-elemento="fuego">🔥 Fuego</button>
+                <button class="filtro-btn" data-elemento="tierra">🌍 Tierra</button>
+                <button class="filtro-btn" data-elemento="aire">💨 Aire</button>
+                <button class="filtro-btn" data-elemento="agua">💧 Agua</button>
+            </div>
+        </header>
+
+        <div class="horoscopo-grid">
+            <!-- ARIES -->
+            <div class="signo-card aries" data-elemento="fuego">
+                <div class="signo-header">
+                    <h2>♈ Aries</h2>
+                    <p class="fechas">21 de marzo - 19 de abril</p>
+                </div>
+                <div class="signo-imagen">🐏</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Fuego</p>
+                        <p><strong>Cualidad:</strong> Cardinal</p>
+                        <p><strong>Planeta regente:</strong> Marte</p>
+                        <p><strong>Personalidad:</strong> Valiente, enérgico, pionero y competitivo. Los Aries son líderes naturales con gran iniciativa y pasión.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- TAURO -->
+            <div class="signo-card tauro" data-elemento="tierra">
+                <div class="signo-header">
+                    <h2>♉ Tauro</h2>
+                    <p class="fechas">20 de abril - 20 de mayo</p>
+                </div>
+                <div class="signo-imagen">🐂</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Tierra</p>
+                        <p><strong>Cualidad:</strong> Fijo</p>
+                        <p><strong>Planeta regente:</strong> Venus</p>
+                        <p><strong>Personalidad:</strong> Paciente, confiable, práctico y dedicado. Los Tauro valoran la estabilidad y los placeres sensoriales.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- GÉMINIS -->
+            <div class="signo-card geminis" data-elemento="aire">
+                <div class="signo-header">
+                    <h2>♊ Géminis</h2>
+                    <p class="fechas">21 de mayo - 20 de junio</p>
+                </div>
+                <div class="signo-imagen">👯</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Aire</p>
+                        <p><strong>Cualidad:</strong> Mutable</p>
+                        <p><strong>Planeta regente:</strong> Mercurio</p>
+                        <p><strong>Personalidad:</strong> Curioso, adaptable, comunicativo y versátil. Los Géminis son excelentes conversadores con mente ágil.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- CÁNCER -->
+            <div class="signo-card cancer" data-elemento="agua">
+                <div class="signo-header">
+                    <h2>♋ Cáncer</h2>
+                    <p class="fechas">21 de junio - 22 de julio</p>
+                </div>
+                <div class="signo-imagen">🦀</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Agua</p>
+                        <p><strong>Cualidad:</strong> Cardinal</p>
+                        <p><strong>Planeta regente:</strong> Luna</p>
+                        <p><strong>Personalidad:</strong> Emocional, intuitivo, protector y hogareño. Los Cáncer son muy sensibles y leales a sus seres queridos.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- LEO -->
+            <div class="signo-card leo" data-elemento="fuego">
+                <div class="signo-header">
+                    <h2>♌ Leo</h2>
+                    <p class="fechas">23 de julio - 22 de agosto</p>
+                </div>
+                <div class="signo-imagen">🦁</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Fuego</p>
+                        <p><strong>Cualidad:</strong> Fijo</p>
+                        <p><strong>Planeta regente:</strong> Sol</p>
+                        <p><strong>Personalidad:</strong> Carismático, creativo, generoso y orgulloso. Los Leo irradian confianza y amor por la vida.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- VIRGO -->
+            <div class="signo-card virgo" data-elemento="tierra">
+                <div class="signo-header">
+                    <h2>♍ Virgo</h2>
+                    <p class="fechas">23 de agosto - 22 de septiembre</p>
+                </div>
+                <div class="signo-imagen">👸</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Tierra</p>
+                        <p><strong>Cualidad:</strong> Mutable</p>
+                        <p><strong>Planeta regente:</strong> Mercurio</p>
+                        <p><strong>Personalidad:</strong> Meticuloso, analítico, servicial y perfeccionista. Los Virgo tienen gran atención al detalle y sentido práctico.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- LIBRA -->
+            <div class="signo-card libra" data-elemento="aire">
+                <div class="signo-header">
+                    <h2>♎ Libra</h2>
+                    <p class="fechas">23 de septiembre - 22 de octubre</p>
+                </div>
+                <div class="signo-imagen">⚖️</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Aire</p>
+                        <p><strong>Cualidad:</strong> Cardinal</p>
+                        <p><strong>Planeta regente:</strong> Venus</p>
+                        <p><strong>Personalidad:</strong> Diplomático, encantador, justo y sociable. Los Libra buscan el equilibrio y la armonía en todas las cosas.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- ESCORPIO -->
+            <div class="signo-card escorpio" data-elemento="agua">
+                <div class="signo-header">
+                    <h2>♏ Escorpio</h2>
+                    <p class="fechas">23 de octubre - 21 de noviembre</p>
+                </div>
+                <div class="signo-imagen">🦂</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Agua</p>
+                        <p><strong>Cualidad:</strong> Fijo</p>
+                        <p><strong>Planeta regente:</strong> Plutón/Marte</p>
+                        <p><strong>Personalidad:</strong> Intenso, apasionado, misterioso y determinado. Los Escorpio son profundamente emocionales y magnéticos.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- SAGITARIO -->
+            <div class="signo-card sagitario" data-elemento="fuego">
+                <div class="signo-header">
+                    <h2>♐ Sagitario</h2>
+                    <p class="fechas">22 de noviembre - 21 de diciembre</p>
+                </div>
+                <div class="signo-imagen">🏹</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Fuego</p>
+                        <p><strong>Cualidad:</strong> Mutable</p>
+                        <p><strong>Planeta regente:</strong> Júpiter</p>
+                        <p><strong>Personalidad:</strong> Optimista, aventurero, filosófico y honesto. Los Sagitario aman la libertad y la exploración.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- CAPRICORNIO -->
+            <div class="signo-card capricornio" data-elemento="tierra">
+                <div class="signo-header">
+                    <h2>♑ Capricornio</h2>
+                    <p class="fechas">22 de diciembre - 19 de enero</p>
+                </div>
+                <div class="signo-imagen">🐐</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Tierra</p>
+                        <p><strong>Cualidad:</strong> Cardinal</p>
+                        <p><strong>Planeta regente:</strong> Saturno</p>
+                        <p><strong>Personalidad:</strong> Ambicioso, disciplinado, responsable y persistente. Los Capricornio son trabajadores incansables.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- ACUARIO -->
+            <div class="signo-card acuario" data-elemento="aire">
+                <div class="signo-header">
+                    <h2>♒ Acuario</h2>
+                    <p class="fechas">20 de enero - 18 de febrero</p>
+                </div>
+                <div class="signo-imagen">🏺</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Aire</p>
+                        <p><strong>Cualidad:</strong> Fijo</p>
+                        <p><strong>Planeta regente:</strong> Urano/Saturno</p>
+                        <p><strong>Personalidad:</strong> Innovador, independiente, humanitario y original. Los Acuario son visionarios con ideas progresistas.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+
+            <!-- PISCIS -->
+            <div class="signo-card piscis" data-elemento="agua">
+                <div class="signo-header">
+                    <h2>♓ Piscis</h2>
+                    <p class="fechas">19 de febrero - 20 de marzo</p>
+                </div>
+                <div class="signo-imagen">🐟</div>
+                <div class="signo-content">
+                    <h3>Características</h3>
+                    <div class="caracteristicas">
+                        <p><strong>Elemento:</strong> Agua</p>
+                        <p><strong>Cualidad:</strong> Mutable</p>
+                        <p><strong>Planeta regente:</strong> Neptuno/Júpiter</p>
+                        <p><strong>Personalidad:</strong> Compasivo, artístico, intuitivo y soñador. Los Piscis son empáticos y tienen rica vida interior.</p>
+                    </div>
+                    <button class="btn-detalles">Ver más detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para detalles adicionales -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descripcion"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
